@@ -24,4 +24,11 @@ public class DollarTest {
         Assert.assertEquals(new Franc(10), five.times(2));
         Assert.assertEquals(new Franc(15), five.times(3));
     }
+
+    @Test
+    public void testFrancEquality() {
+
+        Assert.assertTrue(new Franc(20).equals(new Franc(20)));
+        Assert.assertFalse(new Franc(15).equals(new Franc(10)));
+    }
 }
