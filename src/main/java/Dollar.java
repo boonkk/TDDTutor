@@ -4,8 +4,8 @@ public class Dollar {
     public void add(int amount) {
         this.amount +=amount;
     }
-    void times(int times){
-        amount *= times;
+    Dollar times(int times){
+        return new Dollar(amount*times);
     }
     public Dollar(int amount) {
         this.amount=amount;
