@@ -1,5 +1,5 @@
 public class Franc extends Money {
-    public Franc times(int times){
+    public Money times(int times){
         return new Franc(amount*times);
     }
 
